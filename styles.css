@@ -1,28 +1,49 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F0F8FF;
+
 }
 
-header {
+header{
+    padding: 20px;
+    margin: 10px;
+    font-size: 18px;
     text-align: center;
-    padding: 1em;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #808b96;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    border-radius: 10px;
+    color: black;
 }
 
-section {
-    margin: 20px;
-    padding: 10px;
+div{
+    padding: 20px;
+    margin: 10px;
+    font-size: 18px;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    border-radius: 10px;
+    color: black;
 }
 
-h2 {
-    color: #4CAF50;
+header:hover{
+    background-color: black;
+    color: white;  
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
+div:hover{
+    background-color: black;
+    color: white;  
+}
+/* Default colors */
+.about {
+    background-color: #808b96;
+}
+.skills {
+    background-color: #808b96;
+}
+.projects {
+    background-color: #808b96;
+}
+.contact {
+    background-color: #808b96;
 }
