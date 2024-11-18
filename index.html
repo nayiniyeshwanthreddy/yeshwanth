@@ -3,41 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Yeshwanth Reddy Nayini's Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Downloading nad using the GoogleFonts and fonts from Font-Awesome website-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <title>Yeshwanth Reddy Nayini's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="bg-light py-4">
     <!-- Header Section -->
-    <header>
-        <h1>Yeshwanth Reddy Nayini</h1>
-        <p>Software Developer | Data Engineer</p>
-        <p class="content">Experienced software engineer with a background in Java, Python, and AWS-based data engineering.</p>
+    <div class="container d-flex align-items-center" style="padding-left: 50px;">
+        <!-- Left Section: Name and Profession -->
+        <div class="flex-grow-1 text-start text-center">
+            <h1 class="display-4 mb-2">Yeshwanth Reddy Nayini</h1>
+            <h3 class="text-muted"> Software Developer & Engineer</h3>
+            <p class="fst-italic" style="font-size: 1.2rem; color: #6c757d;">
+                I specialize in designing robust software systems as a Software Engineer while crafting innovative applications as a Software Developer, 
+                merging the best of both roles to deliver seamless and scalable solutions.
+            </p>
+        </div>
+        
+        <!-- Right Section: Profile Photo -->
+        <div style="padding-right: 100px;">
+            <img src="assets/images/yesh_image.png" alt="Yeshwanth Reddy Nayini" class="rounded-circle" style="width: 250px; height: 250px; object-fit: cover;">
+        </div>
+    </div>
     </header>
 
-    <!-- Sections with div elements -->
-    <section>
-        <div class="about">
-            <h1>About Me</h1>
-            <p class="content">I am a software developer and data engineer with experience in designing scalable web applications and optimizing data pipelines. Proficient in Java, Python, and AWS services like Glue and Lambda, I specialize in creating efficient ETL workflows and integrating APIs. I focus on delivering reliable solutions, improving performance, and streamlining operations, all while maintaining high standards of quality and collaboration.</p>
+    <!-- Skills Section -->
+    <section class="bg-light py-4">
+        <div class="container">
+            <h2 class="text-center mb-4">Skills</h2>
             
+            <!-- Programming Languages -->
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skill-list">
+                    <div class="skill">
+                        <div class="skill-name">Java</div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Python</div>
+                    </div>
+                </div>
+            </div>
 
-        </div>
-        <div class="skills">
-            <h1>Skills</h1>
-            </div>            
+            <!-- Frontend Technologies -->
+            <div class="skill-category">
+                <h3>Frontend Technologies</h3>
+                <div class="skill-list">
+                    <div class="skill">
+                        <div class="skill-name">HTML5</div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">CSS3</div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Bootstrap</div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">AJAX</div>
+                    </div>
+                </div>
+            </div>
 
-        </div>
-        <div class="projects">
-            <h1>Projects</h1>
-            <p class="content">This is projects section</p>
+            <!-- Backend Frameworks & Libraries -->
+            <div class="skill-category">
+                <h3>Backend Frameworks & Libraries</h3>
+                <div class="skill-list">
+                    <div class="skill">
+                        <div class="skill-name">Spring Boot</div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Hibernate</div>
+                    </div>
+                </div>
+            </div>
 
-        </div>
-        <div class="contact">
-            <h1>Contact</h1>
-            <p class="content">Connect with me on LinkedIn!</p>
+            <!-- Databases -->
+            <div class="skill-category">
+                <h3>Databases</h3>
+                <div class="skill-list">
+                    <div class="skill">
+                        <div class="skill-name">MySQL</div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">MongoDB</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cloud Technologies -->
+            <div class="skill-category">
+                <h3>Cloud Technologies</h3>
+                <div class="skill-list">
+                    <div class="skill">
+                        <div class="skill-name">AWS</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Big Data Technologies -->
+            <div class="skill-category">
+                <h3>Big Data Technologies</h3>
+                <div class="skill-list">
+                    <div class="skill">
+                        <div class="skill-name">Apache Spark</div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Databricks</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DevOps & Monitoring -->
+            <div class="skill-category">
+                <h3>DevOps & Monitoring</h3>
+                <div class="skill-list">
+                    <div class="skill">
+                        <div class="skill-name">Docker</div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Jenkins</div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-name">Splunk</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
 </body>
 </html>
