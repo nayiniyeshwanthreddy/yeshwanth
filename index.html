@@ -93,6 +93,9 @@
                     <div class="skill">
                         <div class="skill-name">MongoDB</div>
                     </div>
+                    <div class="skill">
+                        <div class="skill-name">SnowFlake</div>
+                    </div>
                 </div>
             </div>
 
@@ -141,7 +144,24 @@
     <section class="bg-light py-4">
         <div class="container">
             <h2 class="text-center mb-4">Professional Experience</h2>
-            
+        <!-- Job 1 -->
+        <div class="job-section">
+            <div class="job-header" onclick="toggleJobDetails('job1')">
+                <h4>Java Developer | Capital One | McLean, VA | December 2022 – Present </h4>
+                <span class="toggle-icon">+</span>
+            </div>
+            <div class="job-details" id="job1">
+                <ul>
+                    <li>Developed AWS Batch processing code triggered by an AWS Lambda function that processes S3 event notifications, tokenizing specific columns in S3 object files and returning the updated files to the S3 bucket, reducing manual data processing time by 40% and enhancing data security.</li>
+                    <li>Collaborated in the migration of data processing workflows from AWS EMR to AWS Glue, optimizing performance and reducing operational costs by approximately $161,000  annually, resulting in significant savings for the company.</li>
+                    <li>Developed and tested AWS Lambda functions and deployed them to production, enabling automated file transfers between S3 buckets, improving file management efficiency for other teams by 30%.</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <!-- More jobs can follow the same structure -->
+    </div>
     </section>
 
 
@@ -166,6 +186,23 @@
             </div>
         </div>
     </footer>
+
+
+<script>
+    // Function to toggle job details visibility
+function toggleJobDetails(jobId) {
+    var jobDetails = document.getElementById(jobId);
+    var toggleIcon = jobDetails.previousElementSibling.querySelector('.toggle-icon');
+
+    if (jobDetails.style.display === 'none' || jobDetails.style.display === '') {
+        jobDetails.style.display = 'block';
+        toggleIcon.textContent = '-';  // Change icon to minus for expanded state
+    } else {
+        jobDetails.style.display = 'none';
+        toggleIcon.textContent = '+';  // Change icon to plus for collapsed state
+    }
+}
+</script>
     
 </body>
 </html>
